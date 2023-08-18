@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlavorFolio</title>
+    <link rel="shortcut icon" href="/Recipe Search/img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+ 
+  
+</head>
+
+<body>
+    <nav>
+        <div class="nav-bar">
+           <a href="/index.html"><div class="left"><img src="./img/logo.png" alt="" height="50px"></div></a>
+            <div class="right">
+                <li class="home-tab">Home</li>
+                <li class="about-tab">About Us</li>
+            </div>
+        </div>
+    </nav>
+    <div class="home">
+    
+        <div class="search-container">
+            <div class="search-main">
+                <div class="search-back">
+                    <div class="search-box">
+                        <div class="search-ipbox"><input class="ip" type="text" placeholder="Search for Recipes"></div>
+                        <div class="search-icon"><i class="bi bi-search"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="loading"></div>
+        <div class="response-container">
+        </div>
+        <div class="featured-container">
+            <div class="featured-head">Featured Recipes</div>
+            <div class="featured-list">
+                <li>
+                    <div class="list-body" id="featured-1">
+                        <div class="foodings">
+                            <div class="dish-name">Spaghetti</div>
+                        </div>
+                        <div class="featured-list-bottom-part">
+                            <div class="dish-full-name">Classic Spaghetti Carbonara</div>
+                            <div class="dish-ingredients-btn">Ingedients</div>
+                            <div class="ingredients-list">
+                                <span>
+                                    <div class="squarebox">1</div> Spaghetti
+                                </span>
+                                <span>
+                                    <div class="squarebox">2</div> Guanciale or Pancetta, diced
+                                </span>
+                                <span>
+                                    <div class="squarebox">3</div> Eggs
+                                </span>
+                                <span>
+                                    <div class="squarebox">4</div> Cheese
+                                </span>
+                                <span>
+                                    <div class="squarebox">5</div> Black pepper
+                                </span>
+                                <span>
+                                    <div class="squarebox">6</div> Salt
+                                </span>
+                                <span>
+                                    <div class="squarebox">7</div> Parsley
+                                </span>
+    
+                                <button class="close-ingrd">Close</button>
+                            </div>
+                            <div class="dish-fullRecipe-btn">See Complete Recipe</div>
+                            <div class="dish-full-recipe">
+                                <span>
+                                    <div class="squarebox">1</div> 400g (14 oz) spaghetti
+                                </span>
+                                <span>
+                                    <div class="squarebox">2</div> 150g (5 oz) guanciale or pancetta, diced (you can also
+                                    use bacon as a substitute)
+                                </span>
+                                <span>
+                                    <div class="squarebox">3</div> 4 large eggs
+                                </span>
+                                <span>
+                                    <div class="squarebox">4</div> 1 cup grated Pecorino Romano cheese (or Parmesan)
+                                </span>
+                                <span>
+                                    <div class="squarebox">5</div> Freshly ground black pepper
+                                </span>
+                                <span>
+                                    <div class="squarebox">6</div> Salt to taste
+                                </span>
+                                <span>
+                                    <div class="squarebox">7</div> Fresh parsley, chopped, for garnish (optional)
+                                </span>
+                                <button class="close-full-r">Close <i class="bi bi-x-circle-fill"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+    
+                <li>
+                    <div class="list-body" id="featured-2">
+                        <div class="foodings">
+                            <div class="dish-name">Paneer</div>
+                        </div>
+                        <div class="featured-list-bottom-part">
+                            <div class="dish-full-name">Mattar Paneer</div>
+                            <div class="dish-ingredients-btn">Ingedients</div>
+                            <div class="ingredients-list"><span>
+                                    <div class="squarebox">1</div>ghee
+                                </span><span>
+                                    <div class="squarebox">2</div>mustard seeds
+                                </span><span>
+                                    <div class="squarebox">3</div>cumin seed
+                                </span><span>
+                                    <div class="squarebox">4</div>onion
+                                </span><span>
+                                    <div class="squarebox">5</div>ginger
+                                </span><span>
+                                    <div class="squarebox">6</div>garlic
+                                </span><span>
+                                    <div class="squarebox">7</div>tomatoes
+                                </span><span>
+                                    <div class="squarebox">8</div>sugar
+                                </span><span>
+                                    <div class="squarebox">9</div>salt
+                                </span><span>
+                                    <div class="squarebox">10</div>masala
+                                </span><span>
+                                    <div class="squarebox">11</div>chili powder
+                                </span><span>
+                                    <div class="squarebox">12</div>turmeric
+                                </span><span>
+                                    <div class="squarebox">13</div>coriander
+                                </span><span>
+                                    <div class="squarebox">14</div>cumin
+                                </span><button class="close-ingrd">Close</button>
+                            </div>
+                            <div class="dish-fullRecipe-btn">See Complete Recipe</div>
+                            <div class="dish-full-recipe"><span>
+                                    <div class="squarebox">1</div>20 ounces panir (cubed)
+                                </span><span>
+                                    <div class="squarebox">2</div>2 tablespoons oil or 2 tablespoons ghee
+                                </span><span>
+                                    <div class="squarebox">3</div>1⁄4 teaspoon mustard seeds
+                                </span><span>
+                                    <div class="squarebox">4</div>1⁄2 teaspoon cumin seed
+                                </span><span>
+                                    <div class="squarebox">5</div>1 small onion
+                                </span><span>
+                                    <div class="squarebox">6</div>1⁄4 teaspoon ginger
+                                </span><span>
+                                    <div class="squarebox">7</div>3 -4 garlic cloves
+                                </span><span>
+                                    <div class="squarebox">8</div>2 large tomatoes
+                                </span><span>
+                                    <div class="squarebox">9</div>1⁄4 teaspoon sugar
+                                </span><span>
+                                    <div class="squarebox">10</div>salt (to taste)
+                                </span><span>
+                                    <div class="squarebox">11</div>1⁄2 teaspoon garam masala
+                                </span><span>
+                                    <div class="squarebox">12</div>1⁄2 teaspoon chili powder
+                                </span><span>
+                                    <div class="squarebox">13</div>1⁄4 teaspoon turmeric powder
+                                </span><span>
+                                    <div class="squarebox">14</div>3⁄4 teaspoon coriander powder
+                                </span> <button class="close-full-r">Close <i class="bi bi-x-circle-fill"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="list-body" id="featured-3">
+                        <div class="foodings">
+                            <div class="dish-name">Salsa</div>
+                        </div>
+                        <div class="featured-list-bottom-part">
+                            <div class="dish-full-name">Mango, and Avocado Salsa</div>
+                            <div class="dish-ingredients-btn">Ingedients</div>
+                            <div class="ingredients-list"><span>
+                                    <div class="squarebox">1</div>mango
+                                </span><span>
+                                    <div class="squarebox">2</div>avocado
+                                </span><span>
+                                    <div class="squarebox">3</div>pineapple
+                                </span><span>
+                                    <div class="squarebox">4</div>red onion
+                                </span><span>
+                                    <div class="squarebox">5</div>cilantro
+                                </span><span>
+                                    <div class="squarebox">6</div>garlic
+                                </span><span>
+                                    <div class="squarebox">7</div>red bell pepper
+                                </span><span>
+                                    <div class="squarebox">8</div>lime
+                                </span><button class="close-ingrd">Close</button>
+                            </div>
+                            <div class="dish-fullRecipe-btn">See Complete Recipe</div>
+                            <div class="dish-full-recipe"><span>
+                                    <div class="squarebox">1</div>1 mango, cut into 1/4 inch dice
+                                </span><span>
+                                    <div class="squarebox">2</div>1 avocado, cut into 1/4 inch dice
+                                </span><span>
+                                    <div class="squarebox">3</div>1/2 cup pineapple, cut into 1/4 inch dice
+                                </span><span>
+                                    <div class="squarebox">4</div>1/4 cup red onion, cut into 1/4 inch dice
+                                </span><span>
+                                    <div class="squarebox">5</div>1/4 cup finely chopped cilantro
+                                </span><span>
+                                    <div class="squarebox">6</div>1 garlic clove, minced and ground into paste with a pinch
+                                    of salt
+                                </span><span>
+                                    <div class="squarebox">7</div>1/2 red bell pepper, cut into 1/4 inch dice
+                                </span><span>
+                                    <div class="squarebox">8</div>Juice of 1 lime
+                                </span> <button class="close-full-r">Close <i class="bi bi-x-circle-fill"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="list-body" id="featured-4">
+                        <div class="foodings">
+                            <div class="dish-name">Soup</div>
+                        </div>
+                        <div class="featured-list-bottom-part">
+                            <div class="dish-full-name">Roasted Green Tomato Basil Soup</div>
+                            <div class="dish-ingredients-btn">Ingedients</div>
+                            <div class="ingredients-list"><span>
+                                    <div class="squarebox">1</div>green tomatoes
+                                </span><span>
+                                    <div class="squarebox">2</div>extra-virgin olive oil
+                                </span><span>
+                                    <div class="squarebox">3</div>kosher salt
+                                </span><span>
+                                    <div class="squarebox">4</div>black pepper
+                                </span><span>
+                                    <div class="squarebox">5</div>unsalted butter
+                                </span><span>
+                                    <div class="squarebox">6</div>yellow onion
+                                </span><button class="close-ingrd">Close</button>
+                            </div>
+                            <div class="dish-fullRecipe-btn">See Complete Recipe</div>
+                            <div class="dish-full-recipe"><span>
+                                    <div class="squarebox">1</div>2 lb. ripe green tomatoes
+                                </span><span>
+                                    <div class="squarebox">2</div>¼ c. extra-virgin olive oil
+                                </span><span>
+                                    <div class="squarebox">3</div>1 tbsp. kosher salt
+                                </span><span>
+                                    <div class="squarebox">4</div>1½ tsp. Freshly ground black pepper
+                                </span><span>
+                                    <div class="squarebox">5</div>1 tbsp. unsalted butter
+                                </span><span>
+                                    <div class="squarebox">6</div>1 yellow onion
+                                </span> <button class="close-full-r">Close <i class="bi bi-x-circle-fill"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="list-body" id="featured-5">
+                        <div class="foodings">
+                            <div class="dish-name">Bagnat</div>
+                        </div>
+                        <div class="featured-list-bottom-part">
+                            <div class="dish-full-name">Grilled Chicken Pan Bagnat</div>
+                            <div class="dish-ingredients-btn">Ingedients</div>
+                            <div class="ingredients-list"><span>
+                                    <div class="squarebox">1</div>skinless boneless chicken breast
+                                </span><span>
+                                    <div class="squarebox">2</div>extra-virgin olive oil
+                                </span><span>
+                                    <div class="squarebox">3</div>extra-virgin olive oil
+                                </span><span>
+                                    <div class="squarebox">4</div>lemon juice
+                                </span><span>
+                                    <div class="squarebox">5</div>herbes de Provence
+                                </span><span>
+                                    <div class="squarebox">6</div>garlic
+                                </span><span>
+                                    <div class="squarebox">7</div>anchovy paste
+                                </span><span>
+                                    <div class="squarebox">8</div>sourdough bread
+                                </span><span>
+                                    <div class="squarebox">9</div>capers
+                                </span><span>
+                                    <div class="squarebox">10</div>tomatoes
+                                </span><span>
+                                    <div class="squarebox">11</div>red onion
+                                </span><button class="close-ingrd">Close</button>
+                            </div>
+                            <div class="dish-fullRecipe-btn">See Complete Recipe</div>
+                            <div class="dish-full-recipe"><span>
+                                    <div class="squarebox">1</div>6 skinless boneless chicken breast halves
+                                </span><span>
+                                    <div class="squarebox">2</div>1/3 cup plus 3/4 cup extra-virgin olive oil
+                                </span><span>
+                                    <div class="squarebox">3</div>6 tablespoons fresh lemon juice
+                                </span><span>
+                                    <div class="squarebox">4</div>1 tablespoon dried herbes de Provence *
+                                </span><span>
+                                    <div class="squarebox">5</div>2 garlic cloves, pressed
+                                </span><span>
+                                    <div class="squarebox">6</div>2 teaspoons anchovy paste
+                                </span><span>
+                                    <div class="squarebox">7</div>2 16-ounce round sourdough bread loaves
+                                </span><span>
+                                    <div class="squarebox">8</div>4 tablespoons drained capers
+                                </span><span>
+                                    <div class="squarebox">9</div>2 large tomatoes, thinly sliced
+                                </span><span>
+                                    <div class="squarebox">10</div>1 small red onion, thinly sliced
+                                </span><span>
+                                    <div class="squarebox">11</div>4 large romaine lettuce leaves
+                                </span> <button class="close-full-r">Close <i class="bi bi-x-circle-fill"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="list-body" id="featured-6">
+                        <div class="foodings">
+                            <div class="dish-name">Peppers</div>
+                        </div>
+                        <div class="featured-list-bottom-part">
+                            <div class="dish-full-name">Stuffed Peppers</div>
+                            <div class="dish-ingredients-btn">Ingedients</div>
+                            <div class="ingredients-list"><span>
+                                    <div class="squarebox">1</div>peppers
+                                </span><span>
+                                    <div class="squarebox">2</div>extra-virgin olive oil
+                                </span><span>
+                                    <div class="squarebox">3</div>yellow onion
+                                </span><span>
+                                    <div class="squarebox">4</div>garlic
+                                </span><span>
+                                    <div class="squarebox">5</div>ground beef
+                                </span><span>
+                                    <div class="squarebox">6</div>ground pork
+                                </span><span>
+                                    <div class="squarebox">7</div>Salt
+                                </span><span>
+                                    <div class="squarebox">8</div>black pepper
+                                </span><span>
+                                    <div class="squarebox">9</div>tomato
+                                </span><span>
+                                    <div class="squarebox">10</div>ground nutmeg
+                                </span><span>
+                                    <div class="squarebox">11</div>cooked long-grain white rice
+                                </span><span>
+                                    <div class="squarebox">12</div>marjoram
+                                </span><span>
+                                    <div class="squarebox">13</div>fresh thyme
+                                </span><span>
+                                    <div class="squarebox">14</div>parsley
+                                </span><span>
+                                    <div class="squarebox">15</div>fresh bread crumbs
+                                </span><button class="close-ingrd">Close</button>
+                            </div>
+                            <div class="dish-fullRecipe-btn">See Complete Recipe</div>
+                            <div class="dish-full-recipe"><span>
+                                    <div class="squarebox">1</div>8 fresh peppers (poblano or small bell)
+                                </span><span>
+                                    <div class="squarebox">2</div>¼ cup extra-virgin olive oil
+                                </span><span>
+                                    <div class="squarebox">3</div>½ medium yellow onion, peeled and diced
+                                </span><span>
+                                    <div class="squarebox">4</div>1 clove garlic, peeled and minced
+                                </span><span>
+                                    <div class="squarebox">5</div>¼ lb. ground beef
+                                </span><span>
+                                    <div class="squarebox">6</div>¼ lb. ground pork
+                                </span><span>
+                                    <div class="squarebox">7</div>Salt and freshly ground black pepper
+                                </span><span>
+                                    <div class="squarebox">8</div>1 large tomato, peeled, seeded, and chopped
+                                </span><span>
+                                    <div class="squarebox">9</div>1 pinch ground nutmeg
+                                </span><span>
+                                    <div class="squarebox">10</div>1¼ cups cooked long-grain white rice
+                                </span><span>
+                                    <div class="squarebox">11</div>1 tbsp. chopped fresh marjoram
+                                </span><span>
+                                    <div class="squarebox">12</div>1 tbsp. chopped fresh thyme
+                                </span><span>
+                                    <div class="squarebox">13</div>1 tbsp. chopped fresh parsley
+                                </span><span>
+                                    <div class="squarebox">14</div>¼ cup fresh bread crumbs
+                                </span><span>
+                                    <div class="squarebox">15</div>undefined
+                                </span> <button class="close-full-r">Close <i class="bi bi-x-circle-fill"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="list-body" id="featured-7">
+                        <div class="foodings">
+                            <div class="dish-name">Noodle</div>
+                        </div>
+                        <div class="featured-list-bottom-part">
+                            <div class="dish-full-name">Spicy Asian Chicken Noodle</div>
+                            <div class="dish-ingredients-btn">Ingedients</div>
+                            <div class="ingredients-list"><span>
+                                    <div class="squarebox">1</div>peanut butter
+                                </span><span>
+                                    <div class="squarebox">2</div>soy sauce
+                                </span><span>
+                                    <div class="squarebox">3</div>rice vinegar
+                                </span><span>
+                                    <div class="squarebox">4</div>chili
+                                </span><span>
+                                    <div class="squarebox">5</div>brown sugar
+                                </span><span>
+                                    <div class="squarebox">6</div>fresh ginger
+                                </span><span>
+                                    <div class="squarebox">7</div>low-salt chicken broth
+                                </span><span>
+                                    <div class="squarebox">8</div>udon noodles
+                                </span><span>
+                                    <div class="squarebox">9</div>cooked chicken
+                                </span><span>
+                                    <div class="squarebox">10</div>carrots
+                                </span><span>
+                                    <div class="squarebox">11</div>green onions
+                                </span><span>
+                                    <div class="squarebox">12</div>red bell pepper
+                                </span><span>
+                                    <div class="squarebox">13</div>cilantro leaves
+                                </span><button class="close-ingrd">Close</button>
+                            </div>
+                            <div class="dish-fullRecipe-btn">See Complete Recipe</div>
+                            <div class="dish-full-recipe"><span>
+                                    <div class="squarebox">1</div>1/3 cup creamy peanut butter (do not use old-fashioned
+                                    style or freshly ground)
+                                </span><span>
+                                    <div class="squarebox">2</div>1/4 cup soy sauce
+                                </span><span>
+                                    <div class="squarebox">3</div>2 tablespoons unseasoned rice vinegar
+                                </span><span>
+                                    <div class="squarebox">4</div>2 tablespoons chili-garlic sauce
+                                </span><span>
+                                    <div class="squarebox">5</div>1 tablespoon (packed) golden brown sugar
+                                </span><span>
+                                    <div class="squarebox">6</div>1 tablespoon minced peeled fresh ginger
+                                </span><span>
+                                    <div class="squarebox">7</div>3 tablespoons (or more) low-salt chicken broth
+                                </span><span>
+                                    <div class="squarebox">8</div>3/4 pound linguine or dried chow mein udon noodles
+                                </span><span>
+                                    <div class="squarebox">9</div>4 cups thinly sliced cooked chicken, cut into strips
+                                </span><span>
+                                    <div class="squarebox">10</div>2 large carrots, coarsely grated (about 1 1/4 cups)
+                                </span><span>
+                                    <div class="squarebox">11</div>6 green onions, chopped
+                                </span><span>
+                                    <div class="squarebox">12</div>1 red bell pepper, cut into matchstick-size strips
+                                </span><span>
+                                    <div class="squarebox">13</div>1/2 cup fresh cilantro leaves
+                                </span> <button class="close-full-r">Close <i class="bi bi-x-circle-fill"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="list-body" id="featured-8">
+                        <div class="foodings">
+                            <div class="dish-name">Momo</div>
+                        </div>
+                        <div class="featured-list-bottom-part">
+                            <div class="dish-full-name">Tandoori Momos</div>
+                            <div class="dish-ingredients-btn">Ingedients</div>
+                            <div class="ingredients-list"><span>
+                                    <div class="squarebox">1</div>chicken mince
+                                </span><span>
+                                    <div class="squarebox">2</div>garlic
+                                </span><span>
+                                    <div class="squarebox">3</div>ginger
+                                </span><span>
+                                    <div class="squarebox">4</div>green chillies
+                                </span><span>
+                                    <div class="squarebox">5</div>celery
+                                </span><span>
+                                    <div class="squarebox">6</div>cabbage
+                                </span><span>
+                                    <div class="squarebox">7</div>carrot
+                                </span><span>
+                                    <div class="squarebox">8</div>spring onion
+                                </span><span>
+                                    <div class="squarebox">9</div>salt
+                                </span><span>
+                                    <div class="squarebox">10</div>white pepper
+                                </span><button class="close-ingrd">Close</button>
+                            </div>
+                            <div class="dish-fullRecipe-btn">See Complete Recipe</div>
+                            <div class="dish-full-recipe"><span>
+                                    <div class="squarebox">1</div>200 g chicken mince
+                                </span><span>
+                                    <div class="squarebox">2</div>10 g garlic chopped
+                                </span><span>
+                                    <div class="squarebox">3</div>10 g ginger chopped
+                                </span><span>
+                                    <div class="squarebox">4</div>2 g green chillies chopped
+                                </span><span>
+                                    <div class="squarebox">5</div>5 g celery
+                                </span><span>
+                                    <div class="squarebox">6</div>50 g cabbage chopped
+                                </span><span>
+                                    <div class="squarebox">7</div>20 g carrot chopped
+                                </span><span>
+                                    <div class="squarebox">8</div>10 g spring onion chopped
+                                </span><span>
+                                    <div class="squarebox">9</div>5 g salt
+                                </span><span>
+                                    <div class="squarebox">10</div>3 g white pepper
+                                </span> <button class="close-full-r">Close <i class="bi bi-x-circle-fill"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </div>
+        </div>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <img src="./img/found.png" class="rounded me-2" alt="..." height="40px" width="40px">
+          <strong class="me-auto">Found</strong>
+          <small>Just Now</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Found Results Related to Your Search <br> Scroll Down to Explore
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="about">
+        <div class="about-container">
+            <div class="about-box">
+                <div class="about-l1">
+                    <div class="about-head">• Our Story</div>
+                    <div class="about-description">At FlavorFolio Website, we are passionate about bringing the joy of cooking and delicious recipes to your kitchen. Our journey began with a simple idea: to create a hub where food enthusiasts, home cooks, and aspiring chefs could find inspiration and discover mouthwatering recipes to delight their taste buds.</div>
+                </div>
+
+                <div class="about-l2">
+                    <div class="about-head">• Our Mission</div>
+                    <div class="about-description">Our mission is to provide you with a diverse collection of recipes that cater to different tastes, dietary preferences, and occasions. From quick and easy weeknight dinners to indulgent desserts and impressive party treats, our recipe library has something for everyone.</div>
+                </div>
+
+                <div class="about-me">
+                    <div class="about-me-head"> Who Am I ?</div>
+                    <div class="about-me-description">I am a passionate developer, a tech enthusiast, and a lover of all things coding. From the early days of tinkering with computers to the late-night coding sessions, my journey into the world of programming has been nothing short of exhilarating.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center border-top " >
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-0 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <span class="mb-md-0 text-white" >© 2023 FlavorFolio</span>
+        </div>
+    
+        <ul class="nav col-md-4 list-unstyled d-flex footer-icons">
+            <li><a href="https://www.facebook.com/biraj.paul.509" class="no-link-icons" target="_blank"><i class="bi bi-facebook"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/hearty.struggler/" class="no-link-icons" target="_blank"><i class="bi bi-instagram"></i></a></li>
+            <li>
+              <a href="https://www.linkedin.com/in/biraj-paul-961478222/" class="no-link-icons" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+            <li>
+              <a href="https://twitter.com/biraj0001" class="no-link-icons" target="_blank"><i class="bi bi-twitter"></i></a></li>
+            <li>
+              <a href="https://github.com/Biraj0001" class="no-link-icons" target="_blank"><i class="bi bi-github"></i></a></li>
+    
+        </ul>
+      </footer>
+</body>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+<script>
+    const toastTrigger = document.getElementById('liveToastBtn')
+const toastLiveExample = document.getElementById('liveToast')
+// const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+//     toastBootstrap.show()
+    $(".about").hide();
+    $(".home-tab").css("background-color","orange")
+    $(".home-tab").css("color","white")
+    $(".about-tab").css("background-color","transparent")
+    $(".about-tab").css("color","orange")
+    $(".ingredients-list").hide();
+    $(".dish-full-recipe").hide();
+    $(".response-container").hide();
+    $(".loading").hide();
+
+    $(".home-tab").click(function(){
+        $(".home").show();
+        $(".about").hide();
+        $(".home-tab").css("background-color","orange")
+        $(".home-tab").css("color","white")
+        $(".about-tab").css("background-color","transparent")
+        $(".about-tab").css("color","orange")
+    })
+    $(".about-tab").click(function(){
+        $(".home").hide();
+        $(".about").show();
+        $(".about-tab").css("background-color","orange")
+        $(".about-tab").css("color","white")
+        $(".home-tab").css("background-color","transparent")
+        $(".home-tab").css("color","orange")
+    })
+
+    $(".dish-ingredients-btn").click(function () {
+        cuurent_id = $(this).parent().parent().attr('id');
+        $("#" + cuurent_id + " .ingredients-list ").fadeIn(100);
+        $('html , body').animate({
+            scrollTop: $("#" + cuurent_id + " .ingredients-list").offset().top + $("#" + cuurent_id + " .ingredients-list")[0].scrollHeight / 2
+        }, 1000);
+    })
+    $(".close-ingrd").click(function () {
+        cuurent_id = $(this).parent().parent().parent().attr('id');
+        $("#" + cuurent_id + " .ingredients-list ").hide(400);
+    })
+    $(".dish-fullRecipe-btn").click(function () {
+        cuurent_id = $(this).parent().parent().attr('id');
+        $("#" + cuurent_id + " .dish-full-recipe ").fadeIn(100);
+        $('html , body').animate({
+            scrollTop: $("#" + cuurent_id + " .dish-fullRecipe-btn").offset().top + $("#" + cuurent_id + " .dish-fullRecipe-btn")[0].scrollHeight
+        }, 1000);
+    })
+    $(".close-full-r").click(function () {
+        cuurent_id = $(this).parent().parent().parent().attr('id');
+        $("#" + cuurent_id + " .dish-full-recipe ").hide(100);
+    })
+
+    $(".search-icon").click(function () {
+        $(".response-container").html("");
+        let q = $(".ip").val();
+        $(".loading").show();
+        if(q!=""){
+            generateResponse(q);
+        }
+        else{
+            $(".loading").hide();
+            $(".response-container").show();
+            $(".response-container").html(`<div class="featured-head">Recipes Related to Search</div>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Fields Empty!</strong> Enter text to search
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>`);
+        }
+    })
+    $(document).keypress(function(event){
+  var keycode = (event.keyCode ? event.keyCode : event.which);
+  if(keycode == '13'){
+    $(".response-container").html("");
+    let q = $(".ip").val();
+    $(".loading").show();
+        if(q!=""){
+            generateResponse(q);
+        }
+        else{
+            $(".loading").hide();
+            $(".response-container").show();
+            $(".response-container").html(`
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Fields Empty!</strong> Enter text to search
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>`);
+        }
+  }
+});
+function filterout(s){
+    if(s!="undefined"){
+        return s ;
+    }
+}
+    let API_KEY = "40698503668e0bb3897581f4766d77f9";   
+    let API_ID = "900da95e";
+    function generateResponse(query) {
+        let res = fetch(`https://api.edamam.com/search?app_id=900da95e&app_key=${API_KEY}&q=${query}&to=50`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).then(res => res.json()).then(data => {
+
+            $(".response-container").show();
+            $(".response-container").html(`<div class="featured-head">Recipes Related to Search</div>`);
+            // console.log("Generated Error : " + data.hits.length);
+            if(data.hits.length==0){
+                $(".loading").hide();
+                $(".response-container").html(`<div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <strong>Error! Invalid Search</strong>
+            <div class="">Please Enter a Valid Data and try again! </div>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" style="margin-top: 11px;"></button>
+          </div>`);
+            }
+            for (let no = 0; (no <= 6 && no<data.hits.length) ; no++) {
+                if(no==0){
+                    $(".loading").hide();
+                $(".ip").val("");
+                }
+                let imageURL = data.hits[no].recipe.image;
+                let Dishname = data.hits[no].recipe.label;
+                let p = "";
+                for (let j = 1; j < Dishname.length; j++) {
+                    p += Dishname[j];
+                }
+                Dishname = Dishname[0].toUpperCase() + p;
+                let ResponseText2 = "";
+                let ResponseText4 = "";
+                let totalhealth = data.hits[no].recipe.healthLabels.length;
+                for (let i = 0; i < totalhealth; i += 3) {
+
+                    ResponseText2 += `<span>• ${data.hits[no].recipe.healthLabels[i]}`;
+                    if(i+1<totalhealth){
+                        ResponseText2 += `• ${data.hits[no].recipe.healthLabels[i + 1]}`; 
+                    }
+                    if(i+2 < totalhealth){
+                        ResponseText2+= ` •${data.hits[no].recipe.healthLabels[i+2]}`;
+                    }
+
+                    ResponseText2 += `</span>`
+                }
+
+                let ingredientlength = data.hits[no].recipe.ingredientLines.length;
+                for (let i = 0; i < ingredientlength; i++) {
+                    ResponseText4 += `<span><div class="ingredient-name">${data.hits[no].recipe.ingredientLines[i]}</div></span>`
+                }
+                let ResponseText1 = ` <div class="responselist">
+                <div class="response-body">
+                    <div class="response-top">
+                        <div class="respose-img"><img src=${imageURL} alt="" height="200px" width="200px"></div>
+                        <div class="respose-description">
+                            <div class="item-name">${Dishname}</div>
+                            <div class="item-quality-list">`
+
+                let ResponseText3 = `</div>
+                        </div>
+                        
+                        <div class="response-ingredients">
+                            <div class="response-ingredients-head">Ingredients</div>
+                            <div class="ResponseIngedients-list">`
+
+                let ResponseText5 = `</div>
+                        </div>
+                    </div>
+                    <div class="response-bottom">
+                        <div class="energy-kcal">
+                            <div class="servings">${data.hits[no].recipe.yield} Servings</div>
+                            <div class="Energy"><div class="large">654</div> kcal</div>
+                        </div>
+                        <div class="all-neutr">
+                            <div class="all-nutr-left">
+                                <span><div class="nutr-name"><div style="color: green; font-size: x-large;margin-right: 5px;">•</div>${data.hits[no].recipe.digest[0].label.toUpperCase()}</div> <div class="nutr-val">${Math.floor(data.hits[no].recipe.digest[0].total)} ${data.hits[no].recipe.digest[0].unit}</div></span>
+                                <span><div class="nutr-name"><div style="color: orange; font-size: x-large;margin-right: 5px;">•</div>${data.hits[no].recipe.digest[1].label.toUpperCase()}</div> <div class="nutr-val">${Math.floor(data.hits[no].recipe.digest[1].total)} ${data.hits[no].recipe.digest[1].unit}</div></span>
+                                <span><div class="nutr-name"><div style="color: rgb(209, 0, 0); font-size: x-large;margin-right: 5px;">•</div>${data.hits[no].recipe.digest[2].label.toUpperCase()}</div> <div class="nutr-val">${Math.floor(data.hits[no].recipe.digest[2].total)} ${data.hits[no].recipe.digest[2].unit}</div></span>                          
+                                </div>
+                            <div class="all-nutr-right">
+                                <span><div class="nutr-name"><div style="color: white; font-size: x-large;margin-right: 5px;">•</div>${data.hits[no].recipe.digest[3].label}</div><div class="nutr-val">${Math.floor(data.hits[no].recipe.digest[3].total)} ${data.hits[no].recipe.digest[3].unit}</div></span>
+                                <span><div class="nutr-name"><div style="color: white; font-size: x-large;margin-right: 5px;">•</div>${data.hits[no].recipe.digest[4].label}</div><div class="nutr-val">${Math.floor(data.hits[no].recipe.digest[4].total)} ${data.hits[no].recipe.digest[4].unit}</div></span>
+                                <span><div class="nutr-name"><div style="color: white; font-size: x-large;margin-right: 5px;">•</div>${data.hits[no].recipe.digest[5].label}</div><div class="nutr-val">${Math.floor(data.hits[no].recipe.digest[5].total)} ${data.hits[no].recipe.digest[5].unit}</div></span>
+                                <span><div class="nutr-name"><div style="color: white; font-size: x-large;margin-right: 5px;">•</div>${data.hits[no].recipe.digest[6].label}</div><div class="nutr-val">${Math.floor(data.hits[no].recipe.digest[6].total)} ${data.hits[no].recipe.digest[6].unit}</div></span>
+                                <span><div class="nutr-name"><div style="color: white; font-size: x-large;margin-right: 5px;">•</div>${data.hits[no].recipe.digest[7].label}</div><div class="nutr-val">${Math.floor(data.hits[no].recipe.digest[7].total)} ${data.hits[no].recipe.digest[7].unit}</div></span>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+       </div>`;
+
+
+                let TotalResponse = ResponseText1 + ResponseText2 + ResponseText3 + ResponseText4 + ResponseText5;
+
+
+                $(".response-container").append(TotalResponse);
+
+                if(no==6){
+                    const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+    toastBootstrap.show()
+                }
+
+            }
+
+        }).catch((e) => {
+            console.log("Generated Error : " + data.hits.length);
+        })
+
+    }
+
+
+
+
+
+
+</script>
+
+</html>
