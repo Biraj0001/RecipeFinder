@@ -1,0 +1,716 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    transition: 1s;
+}
+::-webkit-scrollbar{
+    width: 19%;
+}
+.nav-bar,.left,.right{
+    display: flex;
+    background-color: rgb(33, 34, 34);
+    justify-content: space-between;
+    align-items: center;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.right{
+    list-style-type: none;
+    width: 20%;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    color: orange;
+}
+.right li{
+    border: 2px solid rgba(255, 166, 0, 0);
+    padding: 5px 5px;
+    transition: 0.3s;
+    height: fit-content;
+}
+.right li:hover{
+    border: 2px solid orange;
+    cursor: pointer;
+    color: orange;
+    background-color: orange;
+    color: white;
+}
+.right li:active{
+    border: 2px solid orange;
+    cursor: pointer;
+    /* color: orange; */
+    color: orange;
+    background-color: white;
+}
+.search-container{
+    height: 60vh;
+    background-image: url("https://wallpapers.com/images/featured/delicious-food-background-8uju9nfangtyuxv1.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+.search-main{
+    height: 100%;
+    /* background-color: rgba(170, 168, 168, 0.329); */
+    background-color: rgba(0, 0, 0, 0.568);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-box{
+    /* border: 2px solid ; */
+    border: 2px solid orange;
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.search-ipbox{
+    /* border: 2px solid red; */
+    height: 6vh;
+    width: 30vw;
+    border-radius: 5px;
+}
+.search-icon{
+    /* border: 2px solid red; */
+    border-left: 2px solid orange;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    font-weight: bolder;
+    color: rgb(44, 44, 44);
+    cursor: pointer;
+    transition: 0.1s;
+}
+.search-icon:hover{
+    background-color: orange;
+    color: white;
+   
+}
+.search-icon:active{
+    background-color: white;
+    color: black;
+}
+input{
+    height: 100%;
+    width: 96%;
+    outline: none;
+    border: none;
+    font-size: medium;
+    color: orange;
+    font-weight: bolder;
+    margin-left: 3%;
+    /* border: 2px solid red; */
+}
+.featured-container{
+    /* border: 2px solid red; */
+    padding: 10px 10px;
+    background-color: rgb(33, 34, 34);
+    /* transition: 1s; */
+}
+.featured-head{
+    border-bottom: 5px solid #8ea2af;
+    /* border-left: 7px solid gray; */
+    /* border-bottom-left-radius: 20px; */
+    padding: 5px 0px;
+    color: #8ea2af;
+    font-weight: bolder;
+    font-size: xx-large;
+    margin-bottom: 20px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+.featured-list{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    flex-flow: row wrap;
+}
+.featured-list li{
+    width: 22%;
+    border: 2px solid rgba(255, 94, 0, 0.788);
+    height: max-content;
+    margin-bottom: 10px;
+}
+.featured-list li:hover{
+   scale: 1.01;
+   box-shadow: 0px 0px 8px #fb8057;
+   /* transition: 0.3s; */
+}
+/* .list-body{
+    border: 2px solid black;
+} */
+#featured-1 .foodings{
+    /* border: 2px solid blue; */
+    height: 40vh;
+    background-image: url("https://www.sipandfeast.com/wp-content/uploads/2022/09/spaghetti-carbonara-recipe-6.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+#featured-2 .foodings{
+    /* border: 2px solid blue; */
+    height: 40vh;
+    background-image: url("https://shwetainthekitchen.com/wp-content/uploads/2012/11/IMG_7026-scaled.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+#featured-3 .foodings{
+    /* border: 2px solid blue; */
+    height: 40vh;
+    background-image: url("https://www.gimmesomeoven.com/wp-content/uploads/2010/01/pineapple-mango-avocado-salsa.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+#featured-4 .foodings{
+    /* border: 2px solid blue; */
+    height: 40vh;
+    background-image: url("https://frugalflexitarian.com/wp-content/uploads/2021/08/Green-Tomato-Soup.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+#featured-5 .foodings{
+    /* border: 2px solid blue; */
+    height: 40vh;
+    background-image: url("https://i0.wp.com/smittenkitchen.com/wp-content/uploads/2021/05/chickpea-pan-bagnat-scaled.jpg?fit=750%2C500&ssl=1");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+#featured-6 .foodings{
+    /* border: 2px solid blue; */
+    height: 40vh;
+    background-image: url("https://hips.hearstapps.com/hmg-prod/images/delish-classic-stuffed-peppers-horizontal-1538065876.jpg?crop=0.8890476190476191xw:1xh;center,top&resize=1200:*");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+#featured-7 .foodings{
+    /* border: 2px solid blue; */
+    height: 40vh;
+    background-image: url("https://thebigmansworld.com/wp-content/uploads/2023/02/chicken-chow-mein-recipe.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+#featured-8 .foodings{
+    /* border: 2px solid blue; */
+    height: 40vh;
+    background-image: url("https://junifoods.com/wp-content/uploads/2023/07/Momo-chicken-khukura-recipe.png");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+
+.dish-name{
+    border: 2px solid #fb8057;
+    background-color: #fb8057;
+    color: white;
+    width: fit-content;
+    text-align: center;
+    padding: 2px 5px;
+    font-size: small;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+/* .featured-list-bottom-part{
+border: 2px solid red;
+}
+.dish-full-name,.dish-ingredients-btn,.ingredients-list,.dish-fullRecipe-btn,.dish-full-recipe{
+    border: 2px solid red;
+
+} */
+.dish-full-name{
+    border: 2px solid #fb8057;
+    background-color: #fb8057;
+    color: white;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.dish-ingredients-btn{
+    border: 2px solid #fb8057;
+    color: #fb8057;
+    text-align: center;
+    padding: 2px 2px;
+    font-size: larger;
+    font-weight: bolder;
+    font-family:monospace;
+    background-color: white;
+    cursor: pointer;
+}
+.dish-ingredients-btn:hover{
+    border: 2px solid white;
+    background-color: #fb8057;
+    color: white;
+}
+.dish-ingredients-btn:active{
+    border: 2px solid #fb8057;
+    color: #fb8057;
+    background-color: white;
+}
+.dish-fullRecipe-btn{
+    border: 2px solid #fb8057;
+    color: #fb8057;
+    text-align: center;
+    padding: 2px 2px;
+    font-size: larger;
+    font-weight: bolder;
+    font-family:monospace;
+    background-color: white;
+}
+.dish-fullRecipe-btn:hover{
+    border: 2px solid white;
+    background-color: #fb8057;
+    color: white;
+    cursor: pointer;
+}
+.dish-fullRecipe-btn:active{
+    border: 2px solid #fb8057;
+    color: #fb8057;
+    background-color: white;
+}
+.ingredients-list,.dish-full-recipe{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    row-gap: 5px;
+    background-color: #000000e1;
+}
+.m-r-5{
+    margin-right: 5px;
+}
+.ingredients-list span,.dish-full-recipe span{
+    border-bottom: 2px solid #fb8057;
+    display: flex;
+    padding: 2px 2px;
+    color:#fb8057;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.close-ingrd,.close-full-r{
+    margin: auto;
+    padding: 5px 7px;
+    border:1px solid #fb8057;
+    color:#fb8057;
+    background: transparent;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.close-ingrd:hover,.close-full-r:hover{
+    border:1px solid #fb8057;
+    background-color:#fb8057;
+    color: white;
+}
+.close-ingrd:active,.close-full-r:active{
+    border:1px solid #fb8057;
+    color:#fb8057;
+    background: transparent;
+}
+/* {
+    
+    background-color: #000000e1;
+    color: #ff8843;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+} */
+.squarebox{
+    border: 2px solid #fb8057;
+    padding: 1px 5px;
+    font-size: smaller;
+    margin-right: 5px;
+    height: fit-content;
+    font-weight: bolder;
+}
+
+.response-container{
+height: max-content;
+background-color: rgb(18, 19, 19);
+list-style-type: none;
+padding: 20px 20px;
+}
+.response-container .responselist{
+    border: 2px solid #fb8057;
+    width: 65%;
+    margin: auto;
+    background-color: rgb(230, 230, 230);
+    margin-bottom: 50px;
+}
+.response-top{
+    display: flex;
+    padding: 10px 10px;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+}
+.respose-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.respose-description{
+    border: 2px solid #fb8057;
+    display: flex;
+    flex-flow: column;
+    width: 40%;
+    padding: 2px 2px;
+}
+.item-name{
+    /* border: 2px solid red; */
+    font-size: larger;
+    margin-bottom: 2px;
+    background-color: #fb8057;
+    color: white;
+    text-align:center ;
+    /* height: 10%; */
+    padding: 5px 0px;
+}
+.item-quality-list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    padding: 2px 2px;
+    overflow-y: auto;
+    /* border: 2px solid red; */
+    height: 30vh;
+}
+.item-quality-list span{
+    /* margin-top: 10vh; */
+    border: 2px solid #fb8057;
+
+}
+.response-ingredients{
+    border: 2px solid #fb8057;
+    padding: 2px 2px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.response-ingredients-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:large;
+    height: 10%;
+    padding: 2px 2px;
+    background-color: #fb8057;
+    color: white;
+    /* margin-bottom: 10vh; */
+}
+.ResponseIngedients-list{
+    margin-top: 5px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    height: 35vh;
+    overflow-y: auto;
+
+}
+.ResponseIngedients-list span{
+border: 2px solid #fb8057;
+align-items: center;
+margin-bottom: 2px;
+display: flex;
+}
+.response-bottom{
+    padding: 10px 10px;
+    display: flex;
+   justify-content: space-between;
+   color: white;
+   background-color: #fb8057;
+}
+.Energy{
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.energy-kcal{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.large{
+    font-size: 50px;
+}
+.servings{
+
+    font-size:larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+}
+.all-neutr{
+    display: flex;
+    width: 71%;
+    align-items: center;
+    justify-content: space-between;
+}
+.all-nutr-left{
+    width: 40%;
+}
+.all-nutr-left span{
+    border: 2px solid white;
+    background-color: tomato;
+    display: flex;
+    margin-bottom: 10px;
+    padding: 3px 3px;
+    justify-content: space-between;
+}
+.nutr-name,.nutr-val{
+    display: flex;
+    max-height: fit-content;
+    justify-content: center;
+    align-items: center;
+    /* font-size: small; */
+}
+.all-nutr-right span{
+    border: 2px solid white;
+    padding: 3px 3px;
+    background-color: tomato;
+    display: flex;
+    justify-content: space-between;
+   margin-bottom: 10px;
+}
+.all-nutr-right{
+    /* border: 2px solid red; */
+    width: 40%;
+    height: 33vh;
+    overflow-y: auto;
+}
+.loading{
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    height: 10vh;
+    width: 40vh;
+    background-image: url(./img/loading.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about-container{
+    height: 91vh;
+    background-image: url(https://wallpaperaccess.com/full/767033.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about-box{
+    background-color: rgba(19, 19, 19, 0.473);
+    height: 100%;
+    width: 100%;
+    padding: 10px 10px;
+    row-gap: 10px;
+}
+.about-head{
+    color: rgb(255, 153, 0);
+    font-weight: bolder;
+    font-size: 40px;
+}
+.about-description{
+color: white;
+display: flex;
+align-self: baseline;
+font-size: large;
+padding: 5px 5px;
+}
+.about-l1,.about-l2{
+    width: 80%;
+    margin: auto;
+    background-color: rgba(7, 7, 7, 0.534);
+    padding: 5px 5px;
+    /* border: 2px solid rgb(255, 153, 0); */
+}
+.about-me{
+    /* border: 2px solid red; */
+    background-color: rgba(0, 0, 0, 0.63);
+    padding: 10px 10px;
+    width: 90%;
+    margin: 10px auto;
+    box-shadow: 0px 0px 10px white;
+    border-radius: 5px;
+}
+.about-me-head{
+    color: #fb8057;
+    font-size: 25px;
+}
+.about-me-description{
+    color: rgb(241, 212, 168);
+    font-size: large;
+    
+}
+.footer-icons,.no-link-icons{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+    color: #fb8057;
+}
+.footer-icons li:hover{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+    color: #fb8057;
+    text-shadow: 0px 0px 5px rgb(255, 120, 58);
+    cursor: pointer;
+}
+footer{
+/* margin-top: 27vh; */
+background-color: #000000;
+}
+@media only screen and (max-width: 1552px) {
+    .featured-list li{
+        /* width: 48%; */
+        margin-bottom: 20px;
+    }
+  }
+@media only screen and (max-width: 539px) {
+    .loading{
+        left: 10%;
+        top: 60%;
+    }
+  }
+@media only screen and (max-width: 380px) {
+    .loading{
+        left: 15%;
+        top: 60%;
+    }
+  }
+  
+@media only screen and (max-width: 1064px) {
+    .featured-list li{
+        width: 48%;
+        margin-bottom: 20px;
+    }
+    .right{
+        width: 40%;
+    }
+    .search-ipbox{
+        width: 50vw;
+    }
+  }
+
+
+
+  @media only screen and (max-width: 949px) {
+        .featured-list li{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .right{
+            width: 80%;
+            margin-top: 5px;
+            /* background-color: #000000; */
+        }
+        .left{
+            display: none;
+        }
+        .nav-bar{
+            flex-direction: column;
+        }
+        .search-ipbox{
+            width: 80vw;
+            /* height: 1vh; */
+        }
+        .response-container .responselist{
+            width: 90%;
+        }
+        .response-top{
+            flex-direction: column;
+    
+        }
+        .respose-description{
+            width: 100%;
+        }
+        .response-ingredients{
+            width: 100%;
+        }
+        .respose-img img{
+            width: 100vw;
+            height: 50vh;
+        }
+        .response-bottom{
+            flex-direction: column;
+        }
+        .all-neutr{
+            width: 100%;
+        }
+        .energy-kcal{
+            width: 100%;
+        }
+        .footer-icons{
+            width: 50%;
+        }
+        footer{
+            display: flex;
+            align-items: center;
+        }
+        .all-nutr-right{
+            width: 50%;
+        }
+  }
+
+  @media only screen and (max-width: 478px) {
+    .featured-list li{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .right{
+        width: 80%;
+        margin-top: 5px;
+        /* background-color: #000000; */
+    }
+    .left{
+        display: none;
+    }
+    .nav-bar{
+        flex-direction: column;
+    }
+    .search-ipbox{
+        width: 80vw;
+        /* height: 1vh; */
+    }
+    .response-container .responselist{
+        width: 100%;
+    }
+    .response-top{
+        flex-direction: column;
+
+    }
+    .respose-description{
+        width: 100%;
+    }
+    .response-ingredients{
+        width: 100%;
+    }
+    .respose-img img{
+        width: 100%;
+        height: 30%;
+    }
+    .response-bottom{
+        flex-direction: column;
+    }
+    .all-neutr{
+        width: 100%;
+    }
+    .energy-kcal{
+        width: 100%;
+    }
+    .footer-icons{
+        width: 50%;
+    }
+    footer{
+        display: flex;
+        align-items: center;
+    }
+    .all-nutr-right{
+        width: 50%;
+    }
+  }
